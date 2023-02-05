@@ -8,7 +8,7 @@ node {
         
         stage('Test') {
                 checkout scm
-                sh 'docker images'
+                sh 'cp pom.xml .. '
                 sh './jenkins/scripts/test.sh' 
   
         }
