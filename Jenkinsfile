@@ -1,6 +1,6 @@
 node {
     /* Requires the Docker Pipeline plugin to be installed */
-    withDockerContainer('node:16-buster-slim').inside {
+    withDockerContainer('node:16-buster-slim'){
         stage('Build') {
                 sh 'npm install'
             }
