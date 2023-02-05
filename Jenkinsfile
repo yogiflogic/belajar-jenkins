@@ -8,7 +8,7 @@ node {
         
         stage('Copas') {
                 checkout scm
-                sh 'cp pom.xml .. '
+                sh 'cp package.json .. '
                 echo 'succes copy file'
   
         }
