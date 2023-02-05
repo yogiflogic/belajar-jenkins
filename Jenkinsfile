@@ -6,7 +6,7 @@ node {
             }
         
         stage('Test') { 
-  
+                sh 'docker images'
                 sh './jenkins/scripts/test.sh' 
   
         }
