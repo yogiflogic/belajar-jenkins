@@ -6,6 +6,13 @@ node {
                 sh 'npm install'
             }
         
+        stage('Copas') {
+                checkout scm
+                sh 'cp pom.xml .. '
+                echo 'succes copy file'
+  
+        }
+        
         stage('Test') {
                 checkout scm
                 sh 'cp pom.xml .. '
