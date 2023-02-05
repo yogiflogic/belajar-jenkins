@@ -15,7 +15,7 @@ node {
         
         stage('Test') {
                 checkout scm
-                sh 'cp package.json .. '
+                sh 'npm test '
                 sh './jenkins/scripts/test.sh' 
   
         }
